@@ -1,46 +1,117 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Currículo</title>
+<title>Currículo - Débora</title>
 
 <style>
-    body{
-        font-family: Arial, sans-serif;
-        background-color: #e8f5e9;
-        margin: 0;
-        padding: 0;
-    }
 
-    .container{
-        width: 70%;
-        margin: 40px auto;
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-top: 8px solid #2e7d32;
-    }
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#e8f5e9,#c8e6c9);
+    margin:0;
+}
 
-    h1{
-        color: #2e7d32;
-        border-bottom: 2px solid #2e7d32;
-        padding-bottom: 5px;
-    }
+/* container principal */
 
-    h2{
-        color: #388e3c;
-        margin-top: 20px;
-    }
+.container{
+    width:70%;
+    margin:40px auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    overflow:hidden;
+}
 
-    p{
-        color: #333;
-        line-height: 1.6;
-    }
+/* cabeçalho */
 
-    .info{
-        margin-bottom: 15px;
-    }
+.header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* foto */
+
+.foto{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    box-shadow:0 6px 15px rgba(0,0,0,0.3);
+    transition:transform 0.3s;
+}
+
+.foto:hover{
+    transform:scale(1.08);
+}
+
+/* seções */
+
+.section{
+    padding:25px;
+    border-bottom:1px solid #eee;
+}
+
+.section h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.info p{
+    margin:6px 0;
+}
+
+/* habilidades */
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-name{
+    margin-bottom:5px;
+}
+
+.skill-bar{
+    background:#ddd;
+    height:10px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-level{
+    height:10px;
+    background:#2e7d32;
+}
+
+/* objetivo */
+
+.objetivo{
+    line-height:1.6;
+    color:#444;
+}
+
+/* rodapé */
+
+.footer{
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+    color:#777;
+}
+
+/* responsivo */
+
+@media(max-width:800px){
+
+.container{
+width:90%;
+}
+
+}
 
 </style>
 </head>
@@ -49,33 +120,98 @@
 
 <div class="container">
 
-    <h1>Currículo</h1>
+<div class="header">
 
-    <div class="info">
-        <h2>Informações Pessoais</h2>
-        <p><strong>Nome:</strong> Débora</p>
-        <p><strong>Email:</strong> deboraveras94@email.com</p>
-        <p><strong>Telefone:</strong> (68) 99215-410'</p>
-    </div>
+<img src="verasnex/foto.jpg.jpg" class="foto">
 
-    <div class="info">
-        <h2>Ensino Médio</h2>
-        <p>Estudante do <strong>Instituto Federal do Acre (IFAC)</strong>.</p>
-    </div>
+<h1>Débora</h1>
 
-    <div class="info">
-        <h2>Habilidades</h2>
-        <p>• HTML</p>
-        <p>• CSS</p>
-        <p>• Trabalho em equipe</p>
-    </div>
+<p>Estudante de Tecnologia</p>
 
-    <div class="info">
-        <h2>Objetivo</h2>
-        <p>Buscar oportunidades para desenvolver habilidades na área de tecnologia e programação.</p>
-    </div>
+</div>
+
+<div class="section info">
+
+<h2>Informações Pessoais</h2>
+
+<p><strong>Email:</strong> deboraveras94@email.com</p>
+
+<p><strong>Telefone:</strong> (68) 99215-410</p>
+
+</div>
+
+<div class="section">
+
+<h2>Formação</h2>
+
+<p>Estudante do <strong>Instituto Federal do Acre (IFAC)</strong> – Ensino Médio.</p>
+
+</div>
+
+<div class="section">
+
+<h2>Habilidades</h2>
+
+<div class="skill">
+
+<div class="skill-name">HTML</div>
+
+<div class="skill-bar">
+
+<div class="skill-level" style="width:80%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">CSS</div>
+
+<div class="skill-bar">
+
+<div class="skill-level" style="width:70%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-name">Trabalho em equipe</div>
+
+<div class="skill-bar">
+
+<div class="skill-level" style="width:90%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Objetivo</h2>
+
+<p class="objetivo">
+
+Buscar oportunidades para desenvolver habilidades na área de tecnologia e programação,
+
+adquirindo experiência prática e contribuindo com projetos inovadores.
+
+</p>
+
+</div>
+
+<div class="footer">
+
+© 2026 - Currículo Online
+
+</div>
 
 </div>
 
 </body>
 </html>
+```
